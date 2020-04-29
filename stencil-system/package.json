@@ -1,5 +1,5 @@
 {
-  "name": "stencil-system",
+  "name": "stencil-system-test-app",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "@stencil/core": "^1.12.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loganwatanabe/ds-test-app/tree/master/stencil-system"
+  }
 }
