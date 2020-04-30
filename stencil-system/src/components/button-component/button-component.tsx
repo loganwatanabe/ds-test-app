@@ -9,9 +9,11 @@ export class ButtonComponent implements ComponentInterface {
 
   render() {
     return (
-      <Host>
-        <slot></slot>
-      </Host>
+      <div class="btn-comp">
+        <span>
+          <slot></slot>
+        </span>
+      </div>
     );
   }
 
