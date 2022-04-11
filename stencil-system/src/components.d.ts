@@ -7,6 +7,8 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface ButtonComponent {
+        "disabled": boolean;
+        "link": string;
         "loading": boolean;
         "onClick": void;
         "variant": string;
@@ -46,6 +48,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface ButtonComponent {
+        "disabled"?: boolean;
+        "link"?: string;
         "loading"?: boolean;
         "onClick"?: void;
         "variant"?: string;

@@ -8,14 +8,18 @@ import { Component, ComponentInterface, Prop, h } from '@stencil/core';
 export class ButtonComponent implements ComponentInterface {
   @Prop() onClick: void;
 
+  @Prop() link: string;
+
   @Prop() loading: boolean;
+  
+  @Prop() disabled: boolean;
 
   @Prop() variant: string = "primary";
 
   render() {
     return (
       <div class={this.variant + " btn-container"}>
-        <a class="btn-a" href="#">
+        <a class="btn-a" href={this.link}>
           <div class="btn-comp">
             <div class="text">
               <slot></slot>
